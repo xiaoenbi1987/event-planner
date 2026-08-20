@@ -1,5 +1,8 @@
 # Event Planner
 
+- **Live:** https://event-planner-by-the-hour.netlify.app
+- **Repo:** https://github.com/xiaoenbi1987/event-planner
+
 Plan an event by booking vendors **by the hour** instead of full-day packages, so the total stays
 inside a budget you set up front.
 
@@ -37,9 +40,11 @@ npm run lint     # oxlint
 
 The build output in `dist/` is a plain static site — any static host works.
 
-**Netlify** — `netlify.toml` in the repo already sets the build command (`npm run build`) and publish
-directory (`dist`). Connect the repository at [app.netlify.com](https://app.netlify.com) → *Add new
-site* → *Import an existing project*, and every push to `main` redeploys. From the CLI:
+**Netlify** (what the live site uses) — `netlify.toml` sets the build command (`npm run build`) and
+publish directory (`dist`). The site is linked to this repository's `main` branch through a deploy
+key and a push webhook, so every push to `main` triggers a rebuild. To set the same thing up from
+scratch, connect the repository at [app.netlify.com](https://app.netlify.com) → *Add new project* →
+*Import an existing project*. From the CLI:
 
 ```bash
 npx netlify-cli deploy --prod
