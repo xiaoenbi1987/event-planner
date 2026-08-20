@@ -71,3 +71,4 @@ npx vercel --prod
 
 Deliberately out of scope: accounts, payment, a vendor portal, chat and maps. Sending booking
 requests is a confirmation screen — nothing leaves the browser.
+
